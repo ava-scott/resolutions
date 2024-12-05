@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html replace>
 <head>
     <title>🐼</title>
 
@@ -156,9 +156,6 @@
     </style>
 
 <!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Sean Rintel;Lev Tankelevitch;Ava Scott;Lori Rangel</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
-<mso:SharedWithUsers msdt:dt="string">17;#Sean Rintel;#11;#Lev Tankelevitch;#129;#Ava Scott;#66;#Lori Rangel</mso:SharedWithUsers>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -191,9 +188,9 @@
 
     <script>
         // Establish WebSocket connection
-        // Here's the MSRC server address:
-        const ws = new WebSocket('ws://10.190.102.55:3000');
-        // const ws = new WebSocket('ws://localhost:3000');
+        
+        const ws = new WebSocket('');
+
         let connectionStatus = 'fresh';
         let connectionString = 'Attempting to connect to server...';
         const connectionSpan = document.getElementById('connection-status');
